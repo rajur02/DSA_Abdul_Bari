@@ -24,7 +24,7 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
-int LinarSearch(struct Array *arr, int key) {
+int LinearSearch(struct Array *arr, int key) {
 
     for(int i=0; i<arr->length; i++) {
 
@@ -42,7 +42,7 @@ int main()
 {
     struct Array arr = {{2,3,4,5,6}, 10, 5};  //initializing array if the array is not pointer array and not created inside heap
 
-    printf("Linear serach index is %d\n", LinarSearch(&arr, 5));
+    printf("Linear serach index is %d\n", LinearSearch(&arr, 5));
     Display(arr);
 
     return 0;
