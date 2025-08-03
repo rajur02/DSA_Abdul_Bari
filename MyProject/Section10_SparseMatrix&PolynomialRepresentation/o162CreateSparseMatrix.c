@@ -42,6 +42,6 @@ void Display(struct Sparse s) {
 int main() {
     struct Sparse s;
     
-    create(&s)
+    create(&s);
     
 }
