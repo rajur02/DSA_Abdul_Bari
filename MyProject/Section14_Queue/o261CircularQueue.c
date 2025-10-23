@@ -32,9 +32,10 @@ int dequeue(struct Queue *q) {
         q->front = (q->front+1)%q->size;
         x=q->Q[q->front];
     }
+    return x;
 }
 
-void Dispalay(struct Queue q) {
+void Display(struct Queue q) {
 
     int i=q.front+1;
     do{
@@ -52,7 +53,7 @@ int main() {
     enqueue(&q, 30);
     enqueue(&q, 40);
     enqueue(&q, 50);
-    Dispalay(q);
+    Display(q);
 
     printf("%d", dequeue(&q));
 }

@@ -34,7 +34,7 @@ int dequeue(struct Queue *q) {
     }
 }
 
-void Dispalay(struct Queue q) {
+void Display(struct Queue q) {
 
     for(int i=q.front+1; i<=q.rear; i++)
         printf("%d ", q.Q[i]);
@@ -47,7 +47,7 @@ int main() {
     enqueue(&q, 10);
     enqueue(&q, 20);
     enqueue(&q, 30);
-    Dispalay(q);
+    Display(q);
 
     printf("%d", dequeue(&q));
 }
